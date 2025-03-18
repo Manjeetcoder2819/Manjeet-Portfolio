@@ -1,0 +1,104 @@
+/* 🔹 Experience Section */
+.experience-section {
+  background: linear-gradient(135deg, #1e3a8a, #9333ea);
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔹 Container */
+.experience-container {
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* 🔹 Title */
+.experience-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.experience-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ffdd57;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* 🔹 Grid Layout */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* 🔹 Experience Card */
+.experience-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Job Title */
+.experience-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* 🔹 Company & Period */
+.company-period {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* 🔹 Responsibilities List */
+.experience-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-card li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.experience-card li::before {
+  content: "✔";
+  color: #ffdd57;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+  .experience-title {
+    font-size: 2rem;
+  }
+
+  .experience-card {
+    padding: 1.5rem;
+  }
+}

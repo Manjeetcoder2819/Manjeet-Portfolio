@@ -1,0 +1,120 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0077b6, #0096c7);
+  color: white;
+  overflow: hidden;
+}
+
+/* Hero Container */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+
+/* Hero Title */
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.hero-name {
+  color: #ffdd57;
+}
+
+.hero-highlight {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+  font-size: 1.2rem;
+  max-width: 500px;
+  color: #e0f7fa;
+  margin-bottom: 20px;
+}
+
+/* Hero Image */
+.hero-image {
+  border-radius: 50%;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.hero-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.hero-btn.primary {
+  background: #ffdd57;
+  color: #333;
+}
+
+.hero-btn.primary:hover {
+  background: #ffd500;
+}
+
+.hero-btn.outlined {
+  border: 2px solid white;
+  color: white;
+}
+
+.hero-btn.outlined:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Scroll Down Indicator */
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

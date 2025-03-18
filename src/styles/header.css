@@ -1,0 +1,113 @@
+/* Header Container */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(176, 241, 250);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  padding: 12px 0;
+}
+
+/* Header Content */
+.header-container {
+  max-width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Branding (Logo) */
+.header-logo {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  color: darkblue;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-logo:hover {
+  color: #007bff;
+}
+
+/* Desktop Navigation */
+.navbar {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-item {
+  font-size: 16px;
+  color: #0096c7; /* Light blue */
+  transition: color 0.3s ease-in-out, transform 0.2s;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+.nav-item:hover {
+  color: #0077b6;
+  background-color: #f0f9ff;
+  transform: scale(1.05);
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile Navigation */
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-top: 2px solid #ddd;
+  padding: 12px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mobile-nav-item {
+  font-size: 16px;
+  color: #0096c7;
+  padding: 12px;
+  text-align: center;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.mobile-nav-item:hover {
+  background: #f0f9ff;
+  color: #0077b6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .mobile-menu {
+    width: 100%;
+  }
+}
