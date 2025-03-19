@@ -7,8 +7,8 @@ import "@/styles/education.css";
 const education = [
   {
     type: "Degree",
-    title: "BSc in Computer Science",
-    institution: "University of Technology",
+    title: "Bteach in Computer Science",
+    institution: "Priyadarshini colleage of engineering",
     year: "2013 - 2017",
     icon: GraduationCap,
   },
@@ -20,7 +20,7 @@ const education = [
     icon: Scroll,
   },
   {
-    type: "Achievement",
+    type: "Full Stack Developer",
     title: "Distinguished Performance Award",
     institution: "Tech Corp",
     year: "2022",
