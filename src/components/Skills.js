@@ -9,7 +9,7 @@ import "@/styles/Skills.css"; // Import your CSS file
 
 const skills = [
   { icon: SiReact, name: "React" },
-  { icon: SiTypescript, name: "TypeScript" },
+  { icon: SiJavascript, name: "javaScript" },
   { icon: SiNodedotjs, name: "Node.js" },
   { icon: SiNextdotjs, name: "Next.js" },
   { icon: SiTailwindcss, name: "Tailwind CSS" },
